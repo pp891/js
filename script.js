@@ -12,5 +12,11 @@ function propinaPorComensal() {
     alert("Cada comensal dejará $" + propina + " de propina.");
 }
 
+function gastoTotalComensal() {
+    const total = (montoTotal / comensales) + ((montoTotal * (porcentajePropina / 100)) / comensales);
+    alert("Cada persona pagará $" + total + " en total.")
+}
+
 calculoPropina();
 propinaPorComensal();
+gastoTotalComensal();
